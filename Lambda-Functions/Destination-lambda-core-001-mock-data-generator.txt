@@ -1,0 +1,24 @@
+Destination configuration:
+---------------------------
+we have enable destination to Destination lambda-core-001-mock-data-generator function
+
+Send invocation records to a destination lambda-core-001-mock-data-send-to-s3 lambda function when lambda-core-001-mock-data-generator function function is invoked asynchronously, or if your function processes records from a stream.
+
+Source:
+--------
+# The type of invocation that maps to the destination.
+Asynchronous invocation
+
+Condition:
+----------
+# The condition for using the destination.
+On success
+
+Destination type:
+-----------------
+# An SQS queue, SNS topic, Lambda function, or EventBridge event bus.
+Lambda function
+
+Destination:
+-------------
+arn of lambda-core-001-mock-data-send-to-s3

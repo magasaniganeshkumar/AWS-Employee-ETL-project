@@ -1,0 +1,17 @@
+rule-name:
+-----------
+aeb-core-001-mock-data-rule
+
+Cron expression:
+-----------------
+0 5/1 * * ? *
+
+Description:
+-------------
+It will run lambda function at every one hour.
+
+Targets:
+---------
+    lambda-function:
+    ---------------
+    lambda-core-001-mock-data-generator
