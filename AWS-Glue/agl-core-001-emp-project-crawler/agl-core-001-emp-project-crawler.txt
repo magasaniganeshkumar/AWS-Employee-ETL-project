@@ -1,0 +1,66 @@
+Create-crawler:
+-----------------
+
+Step 1: Set crawler properties
+------------------------------
+1. Set crawler properties
+Name:
+-----
+agl-emp-project-crawler
+
+Step 2: Choose data sources and classifiers
+-------------------------------------------
+Data sources (1):
+-------------------
+Type
+Data source:
+------------
+Parameters:
+------------
+S3	s3://s3-emp-project-data/inbox/
+
+Custom classifiers :
+--------------------
+# A classifier checks whether a given file is in a format the crawler can handle. If it is, the classifier creates a schema in the form of a StructType object that matches that data format.
+
+# Choose one or more classifiers
+emp-json-data-parser
+
+    Classifier details:
+    -----------------------
+    Classifier name
+    ---------------------
+    emp-json-data-parser
+    # Name may contain letters (A-Z), numbers (0-9), hyphens (-), or underscores (_), and can be up to 255 characters long.
+      Classifier type and properties
+
+    JSON
+    Extract fields out of JSON files.
+
+    JSON path
+    $.emp_name,$.emp_age,$.emp_salary,$emp_addresses
+
+Step 3: Configure security settings:
+-------------------------------------
+# Configure security settings
+IAM role:
+---------
+AWSGlueServiceRole-emp-json-data
+
+Step 4: Set output and scheduling:
+-----------------------------------
+Set output and scheduling:
+-------------------------
+Database:
+---------
+emp-json-data-db
+Table prefix - optional:
+-----------------------
+json_data
+
+Maximum table threshold - optional:
+-------------------------
+-
+Schedule:
+------------
+On demand

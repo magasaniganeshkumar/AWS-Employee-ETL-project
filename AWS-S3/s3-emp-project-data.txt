@@ -1,0 +1,4 @@
+Amazon S3
+Buckets
+s3-emp-project-data
+inbox/

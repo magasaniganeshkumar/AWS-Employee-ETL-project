@@ -1,0 +1,40 @@
+DynamoDB
+Tables
+Tables (1)Info
+
+Actions
+Delete
+Create table
+
+Any table tag
+
+1
+
+
+Name
+Status
+Partition key
+Sort key
+Indexes
+Deletion protection
+Read capacity mode
+Write capacity mode
+Total size
+Table class
+Name
+Status
+Partition key
+Sort key
+Indexes
+Deletion protection
+Read capacity mode
+Write capacity mode
+Total size
+Table class
+employee_data	Active	emp_name (S)	emp_salary (N)	
+0
+Off	
+Provisioned with auto scaling (1)
+Provisioned with auto scaling (1)
+324 bytes	Standard
+

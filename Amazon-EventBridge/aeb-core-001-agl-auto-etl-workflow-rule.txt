@@ -1,0 +1,39 @@
+step1:Rule detail:
+----------------
+Name:
+agl-auto-etl-workflow-rule
+Schedule:
+----------
+A rule that runs on a schedule
+
+step2:Schedule pattern
+Schedule pattern:
+Define the cron expression for the schedule
+cron (
+30
+Minutes
+5/1
+Hours
+*
+Day of month
+*
+Month
+?
+Day of week
+*
+Year
+)
+
+step3:Target :
+-------------
+
+AWS service
+
+Glue workflow
+Glue workflow name:
+
+etl-emp-project-workflow
+
+Execution role:
+
+Amazon_EventBridge_Invoke_Glue_1881435503

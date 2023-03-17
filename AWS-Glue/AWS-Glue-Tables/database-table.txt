@@ -1,0 +1,7 @@
+table-name:
+-----------
+json_datainbox   
+
+database-name:
+---------------
+emp-json-data-db
